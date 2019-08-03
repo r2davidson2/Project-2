@@ -5,6 +5,27 @@
       <title></title>
    </head>
    <body>
+      <h1>Edit Car Details</h1>
+      <div class="">
+         <form class="" action="/<%=cars.id%>?_method=PUT" method="POST">
+            <label for="year">Year</label>
+            <input type="Number" name="year" value="<%=cars.year%>"><br>
 
+            <label for="make">Make</label>
+            <input type="text" name="make" value="<%=cars.make%>"><br>
+
+            <label for="model">Model</label>
+            <input type="text" name="model" value="<%=cars.model%>"><br>
+
+            <label for="img">Image</label>
+            <input type="text" name="img" value="<%=cars.img%>"><br>
+
+            <label for="description">Description</label>
+            <input type="text" name="description" value="<%=cars.description%>"><br>
+
+            <input type="submit" name="" value="Update Car">
+         </form>
+      </div>
+      <a href="/"><button type="button" name="button">Return To Car Index</button></a>
    </body>
 </html>

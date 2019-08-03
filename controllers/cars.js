@@ -40,10 +40,8 @@ router.get('/:id/edit', (req, res) => {
 
 // Update Route
 router.put('/:id', (req, res) => {
-   Cars.findById(req.params.id, (error, foundCar) => {
-      res.render('edit.js'), {
-         cars: foundCar
-      }
+   Cars.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, foundCar) => {
+      res.redirect('/'+req.params.id)
    });
 });
 
