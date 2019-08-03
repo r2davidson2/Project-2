@@ -6,6 +6,15 @@
    </head>
    <body>
       <h1>All Cars</h1>
-      
+      <% for (let i = 0; i < cars.length; i++) { %>
+         <div class="">
+            <a href="<%=cars[i].id%>">
+               <img src="<%=cars[i].img%>" alt="<%=`${cars[i].year} ${cars[i].make} ${cars[i].model}` %>">
+            </a>
+            <p><%=`${cars[i].year} ${cars[i].make} ${cars[i].model}` %></p>
+         </div>
+      <% } %>
+
+      <a href="/new"><button type="button" name="button">Add New Car</button></a>
    </body>
 </html>

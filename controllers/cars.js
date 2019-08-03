@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
 //Destroy/Delete Route
 router.delete('/:id', (req, res) => {
    Cars.findByIdAndRemove(req.params.id, (error, foundCar) => {
-      res.redirect('/cars');
+      res.redirect('/');
    });
 });
 
@@ -59,7 +59,7 @@ router.get('/:id', (req, res) => {
 // Create Route
 router.post('/', (req, res) => {
    Cars.create(req.body, (error, createdCar) => {
-      res.redirect('/cars');
+      res.redirect('/');
    });
 });
 
