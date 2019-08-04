@@ -1,5 +1,12 @@
 body {
    text-align: center;
+   font-family: 'Racing Sans One', cursive;
+   color: ghostwhite;
+   background: black;
+}
+h1 {
+   font-size: 500%;
+   margin: 25px auto 10px auto;
 }
 .display-container {
    display: flex;
@@ -9,6 +16,7 @@ body {
    background-image: url('https://images.pexels.com/photos/923022/pexels-photo-923022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
    background-position: top;
    background-repeat: no-repeat;
+   /* opacity: 0.5; */
 }
 .image-container {
    /* width: 50%;
@@ -26,15 +34,16 @@ label {
    margin-top: 50px;
    text-align: right;
    color: ghostwhite;
-   background: rgba(0, 0, 0, 0.5);
+   background: rgba(0, 0, 0, 0.75);
    padding: 3px;
+   font-size: 125%;
 }
 input {
    width: 98%;
    outline: none;
    margin-bottom: 50px;
    color: ghostwhite;
-   background: rgba(255, 255, 255, 0.25);
+   background: rgba(255, 255, 255, 0.75);
 }
 input:focus {
    color: black;
@@ -45,7 +54,7 @@ textarea {
    width: 98%;
    height: 100px;
    outline: none;
-   background: rgba(255, 255, 255, 0.25);
+   background: rgba(255, 255, 255, 0.50);
 }
 textarea:focus {
    background: rgba(255, 255, 255, 0.75);

@@ -1,11 +1,15 @@
 body {
    text-align: center;
    font-family: 'Racing Sans One', cursive;
+   color: ghostwhite;
+   background: black;
 }
 h1 {
    font-family: 'Racing Sans One', cursive;
-   font-size: 700%;
+   font-size: 750%;
    margin: 25px auto 0 auto;
+   color: whitesmoke;
+   text-shadow: 2px 2px green;
 }
 .container {
    display: flex;
@@ -28,13 +32,30 @@ h1 {
 }
 p {
    font-size: 150%;
+   color: black;
+}
+footer {
+   position: fixed;
+   text-align: center;
+   /* left: 0px; */
+   bottom: 0px;
+   background: black;
+   width: 100%;
+   padding: 10px;
+}
+.footer {
+   /* width: 100%; */
+   text-align: center;
 }
 .add {
-   width: 150px;
+   /* width: 150px; */
    font-family: monospace;
-   font-size: 125%;
+   font-size: 250%;
    color: ghostwhite;
-   background: black;
+   background: green;
    cursor: pointer;
    outline: none;
+}
+.add:hover {
+   font-size: 260%;
 }

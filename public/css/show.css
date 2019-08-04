@@ -1,5 +1,8 @@
 body {
    text-align: center;
+   font-family: 'Racing Sans One', cursive;
+   color: ghostwhite;
+   background: black;
 }
 .container {
    max-width: 70%;
