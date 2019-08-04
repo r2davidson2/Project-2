@@ -1,5 +1,6 @@
 body {
    text-align: center;
+   font-family: 'Racing Sans One', cursive;
 }
 h1 {
    font-family: 'Racing Sans One', cursive;
@@ -24,6 +25,9 @@ h1 {
 .image {
    width: 90%;
    /* object-fit: scale-down; */
+}
+p {
+   font-size: 150%;
 }
 .add {
    width: 150px;
