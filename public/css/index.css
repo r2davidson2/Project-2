@@ -1,0 +1,16 @@
+body {
+   text-align: center;
+}
+.container {
+   display: flex;
+   justify-content: space-between;
+   flex-wrap: wrap;
+   /* background: black; */
+   padding: 10%;
+}
+.car-container {
+   width: 260px;
+   overflow: hidden;
+   background: rgba(248, 248, 255, 0.85);
+
+}
