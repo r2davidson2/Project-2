@@ -1,6 +1,11 @@
 body {
    text-align: center;
 }
+h1 {
+   font-family: 'Racing Sans One', cursive;
+   font-size: 700%;
+   margin: 25px auto 0 auto;
+}
 .container {
    display: flex;
    justify-content: space-around;
@@ -10,7 +15,7 @@ body {
 
 }
 .car-container {
-   width: 300px;
+   width: 375px;
    overflow: hidden;
    background: rgba(248, 248, 255, 0.85);
    margin: 10px;

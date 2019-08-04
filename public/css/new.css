@@ -33,12 +33,22 @@ input {
    width: 98%;
    outline: none;
    margin-bottom: 50px;
+   color: ghostwhite;
+   background: rgba(255, 255, 255, 0.25);
+}
+input:focus {
+   color: black;
+   background: rgba(255, 255, 255, 0.75);
 }
 textarea {
    resize: none;
    width: 98%;
    height: 100px;
    outline: none;
+   background: rgba(255, 255, 255, 0.25);
+}
+textarea:focus {
+   background: rgba(255, 255, 255, 0.75);
 }
 .btn {
    width: 150px;
@@ -50,6 +60,9 @@ textarea {
    outline: none;
    margin-top: 50px;
 }
+.btn:hover {
+   font-size: 135%;
+}
 .return {
    font-family: monospace;
    font-size: 100%;
@@ -58,4 +71,7 @@ textarea {
    cursor: pointer;
    outline: none;
    margin-top: 25px;
+}
+.return:hover {
+   font-size: 125%;
 }

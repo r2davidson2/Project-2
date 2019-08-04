@@ -4,9 +4,11 @@
       <meta charset="utf-8">
       <title></title>
       <link rel="stylesheet" href="/css/index.css">
+      <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
    </head>
    <body>
       <h1>All Cars</h1>
+      <a href="/new"><button class="add" type="button" name="button">Add New Car</button></a>
       <div class="container">
          <% for (let i = 0; i < cars.length; i++) { %>
             <div class="car-container">
@@ -17,6 +19,6 @@
             </div>
          <% } %>
       </div>
-      <a href="/new"><button class="add" type="button" name="button">Add New Car</button></a>
+
    </body>
 </html>

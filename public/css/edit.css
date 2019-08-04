@@ -58,6 +58,11 @@ textarea {
    height: 23px;
    /* margin-top: 50px; */
 }
+.btn:hover {
+   font-size: 140%;
+   width: 170px;
+   height: 28px;
+}
 .return {
    font-family: monospace;
    font-size: 100%;
@@ -69,4 +74,11 @@ textarea {
    height: 23px;
    text-align: right;
    /* margin-top: 25px; */
+}
+.return:hover {
+   /* font-size: 110%; */
+   width: 170px;
+   height: 28px;
+   color: black;
+   background: ghostwhite;
 }
