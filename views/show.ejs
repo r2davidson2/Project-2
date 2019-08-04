@@ -3,18 +3,21 @@
    <head>
       <meta charset="utf-8">
       <title></title>
+      <link rel="stylesheet" href="/css/show.css">
    </head>
    <body>
-      <div class="">
+      <div class="container">
          <h1><%=`${cars.year} ${cars.make} ${cars.model}`%></h1>
-         <img src="<%=cars.img%>" alt="">
+         <img class="image" src="<%=cars.img%>" alt="">
          <p><%=cars.description%></p>
-         <a href="/<%=cars.id%>/edit"><button type="button" name="button">Edit Car Details</button></a>
-         <form class="" action="/<%=cars.id%>?_method=DELETE" method="POST">
-            <input type="submit" value="Delete Car">
-         </form>
+         <div class="buttons-container">
+            <a href="/<%=cars.id%>/edit"><button class="btn" type="button" name="button">Edit</button></a>
+            <form  action="/<%=cars.id%>?_method=DELETE" method="POST">
+               <input class="btn" type="submit" value="Delete Car">
+            </form>
+         </div>
       </div>
-      <a href="/"><button type="button" name="button">Return to Car Index</button></a>
+      <a href="/"><button class="return" type="button" name="button">Return to Car Index</button></a>
 
    </body>
 </html>

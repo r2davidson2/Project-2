@@ -3,29 +3,38 @@
    <head>
       <meta charset="utf-8">
       <title></title>
+      <link rel="stylesheet" href="/css/edit.css">
    </head>
    <body>
-      <h1>Edit Car Details</h1>
-      <div class="">
-         <form class="" action="/<%=cars.id%>?_method=PUT" method="POST">
-            <label for="year">Year</label>
-            <input type="Number" name="year" value="<%=cars.year%>"><br>
+      <h1>Edit Your <%=`${cars.year} ${cars.make} ${cars.model}` %></h1>
+      <div class="display-container">
+         <div class="image-container">
+            <img src="<%=cars.img%>" alt="">
+         </div>
+         <div class="input-container">
+            <form class="" action="/<%=cars.id%>?_method=PUT" method="POST">
+               <label for="year">Year</label>
+               <input type="Number" name="year" value="<%=cars.year%>"><br>
 
-            <label for="make">Make</label>
-            <input type="text" name="make" value="<%=cars.make%>"><br>
+               <label for="make">Make</label>
+               <input type="text" name="make" value="<%=cars.make%>"><br>
 
-            <label for="model">Model</label>
-            <input type="text" name="model" value="<%=cars.model%>"><br>
+               <label for="model">Model</label>
+               <input type="text" name="model" value="<%=cars.model%>"><br>
 
-            <label for="img">Image</label>
-            <input type="text" name="img" value="<%=cars.img%>"><br>
+               <label for="img">Image</label>
+               <input type="text" name="img" value="<%=cars.img%>"><br>
 
-            <label for="description">Description</label>
-            <input type="text" name="description" value="<%=cars.description%>"><br>
+               <label for="description">Description</label>
+               <textarea name="description" rows="8" cols="80"><%=cars.description%></textarea><br>
 
-            <input type="submit" name="" value="Update Car">
-         </form>
+               <div class="button-container">
+                  <input class="btn" type="submit" name="" value="Update Car">
+                  <a href="/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+               </div>
+            </form>
+         </div>
       </div>
-      <a href="/"><button type="button" name="button">Return To Car Index</button></a>
+
    </body>
 </html>

@@ -1,0 +1,32 @@
+body {
+   text-align: center;
+}
+.container {
+   max-width: 70%;
+   margin: 0 auto;
+}
+.image {
+   width: 100%;
+}
+.buttons-container {
+   display: flex;
+   justify-content: space-around;
+   width: 100%;
+}
+.btn {
+   width: 150px;
+   font-family: monospace;
+   font-size: 125%;
+   color: ghostwhite;
+   background: black;
+   cursor: pointer;
+   outline: none;
+}
+.return {
+   font-family: monospace;
+   font-size: 100%;
+   color: ghostwhite;
+   background: black;
+   cursor: pointer;
+   outline: none;
+}
