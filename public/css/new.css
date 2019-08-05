@@ -12,16 +12,13 @@ h1 {
    display: flex;
    /* justify-content: center; */
    width: 70%;
-   margin: 0 auto;
+   margin: 0 auto 70px auto;
    background-image: url('https://images.pexels.com/photos/923022/pexels-photo-923022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
    background-position: top;
    background-repeat: no-repeat;
+   background-size: cover;
    /* opacity: 0.5; */
-}
-.image-container {
-   /* width: 50%;
-   object-fit: fill;
-   overflow: hidden; */
+   padding: 10px;
 }
 .input-container {
    width: 50%;
@@ -34,7 +31,7 @@ label {
    margin-top: 50px;
    text-align: right;
    color: ghostwhite;
-   background: rgba(0, 0, 0, 0.75);
+   background: rgba(67, 80, 54, 0.80);
    padding: 3px;
    font-size: 125%;
 }
@@ -60,27 +57,37 @@ textarea:focus {
    background: rgba(255, 255, 255, 0.75);
 }
 .btn {
-   width: 150px;
+   /* width: 150px; */
    font-family: monospace;
-   font-size: 125%;
+   font-size: 150%;
    color: ghostwhite;
-   background: black;
+   background: #435036;
    cursor: pointer;
    outline: none;
-   margin-top: 50px;
+   margin-top: 40px;
 }
 .btn:hover {
-   font-size: 135%;
+   font-size: 210%;
+}
+footer {
+   position: fixed;
+   text-align: center;
+   /* left: 0px; */
+   bottom: 0px;
+   background: black;
+   width: 100%;
+   padding: 10px;
 }
 .return {
    font-family: monospace;
-   font-size: 100%;
-   color: ghostwhite;
+   font-size: 200%;
+   color: green;
    background: black;
+   border-color: inherit;
    cursor: pointer;
    outline: none;
-   margin-top: 25px;
+   /* margin-top: 25px; */
 }
 .return:hover {
-   font-size: 125%;
+   font-size: 260%;
 }

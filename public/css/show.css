@@ -3,13 +3,20 @@ body {
    font-family: 'Racing Sans One', cursive;
    color: ghostwhite;
    background: black;
+   /* background: #4A5B61; */
+}
+h1 {
+   font-size: 450%;
 }
 .container {
    max-width: 70%;
-   margin: 0 auto;
+   margin: 0 auto 75px auto;
 }
 .image {
    width: 100%;
+}
+p {
+   font-size: 200%;
 }
 .buttons-container {
    display: flex;
@@ -17,19 +24,38 @@ body {
    width: 100%;
 }
 .btn {
-   width: 150px;
+   width: 200px;
    font-family: monospace;
-   font-size: 125%;
-   color: ghostwhite;
+   font-size: 200%;
+   /* color: ghostwhite; */
+   color: green;
+   border-color: inherit;
    background: black;
    cursor: pointer;
    outline: none;
 }
+.delete {
+   /* background: firebrick; */
+   color: firebrick;
+   border-color: inherit;
+}
+footer {
+   position: fixed;
+   text-align: center;
+   /* left: 0px; */
+   bottom: 0px;
+   background: black;
+   /* background: #4A5B61; */
+   width: 100%;
+   padding: 10px;
+}
 .return {
    font-family: monospace;
-   font-size: 100%;
-   color: ghostwhite;
+   font-size: 250%;
+   /* color: ghostwhite; */
+   color: green;
    background: black;
+   border-color: inherit;
    cursor: pointer;
    outline: none;
 }

@@ -45,14 +45,17 @@ footer {
 }
 .footer {
    /* width: 100%; */
-   text-align: center;
+   /* text-align: center; */
 }
 .add {
    /* width: 150px; */
    font-family: monospace;
    font-size: 250%;
-   color: ghostwhite;
-   background: green;
+   /* color: ghostwhite; */
+   color: green;
+   /* background: green; */
+   background: black;
+   border-color: inherit;
    cursor: pointer;
    outline: none;
 }

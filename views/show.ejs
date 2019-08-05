@@ -14,11 +14,12 @@
          <div class="buttons-container">
             <a href="/<%=cars.id%>/edit"><button class="btn" type="button" name="button">Edit</button></a>
             <form  action="/<%=cars.id%>?_method=DELETE" method="POST">
-               <input class="btn" type="submit" value="Delete Car">
+               <input class="btn delete" type="submit" value="Delete Car">
             </form>
          </div>
       </div>
-      <a href="/"><button class="return" type="button" name="button">Return to Car Index</button></a>
-
+      <footer>
+         <a href="/"><button class="return" type="button" name="button">Return to Car Index</button></a>
+      </footer>
    </body>
 </html>

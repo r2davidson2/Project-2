@@ -1,26 +1,30 @@
 body {
    text-align: center;
+   font-family: 'Racing Sans One', cursive;
+   color: ghostwhite;
+   background: black;
+}
+h1 {
+   font-size: 350%;
+   max-width: 70%;
+   margin: 50px auto 15px auto;
 }
 .display-container {
-   /* display: flex; */
-   /* justify-content: center; */
    width: 70%;
    margin: 0 auto;
-   /* background-image: url('https://images.pexels.com/photos/923022/pexels-photo-923022.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
-   background-position: top;
-   background-repeat: no-repeat; */
 }
 img {
    width: 100%;
 
 }
 .input-container {
-   width: 75%;
-   height: 600px;
-   background: rgba(255, 255, 255, 0.25);
+   width: 90%;
+   /* height: 600px; */
+   /* background: rgba(255, 255, 255, 0.25); */
+   background: black;
    text-align: left;
-   padding: 10px 10px 0 10px;;
-   margin: 0 auto;
+   padding: 10px;
+   margin: 0 auto 80px auto;
 }
 label {
    margin-top: 50px;
@@ -28,57 +32,76 @@ label {
    color: ghostwhite;
    background: rgba(0, 0, 0, 0.5);
    padding: 3px;
+   font-size: 200%;
 }
 input {
+   font-size: 150%;
    width: 100%;
+   height: 50px;
    outline: none;
    margin-bottom: 5px;
    padding: 0;
 }
 textarea {
+   font-size: 150%;
    resize: none;
    width: 100%;
    height: 100px;
    outline: none;
    padding: 0;
 }
+footer {
+   position: fixed;
+   text-align: center;
+   left: 0px;
+   bottom: 0px;
+   background: black;
+   width: 100%;
+   padding: 10px;
+}
 .button-container {
    display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
 }
 .btn {
-   width: 150px;
+   /* width: 150px; */
    font-family: monospace;
-   font-size: 125%;
-   color: ghostwhite;
+   font-size: 200%;
+   color: green;
    background: black;
+   border-color: inherit;
    cursor: pointer;
    outline: none;
-   width: 165px;
-   height: 23px;
+   width: 312px;
+   height: 50px;
    /* margin-top: 50px; */
 }
 .btn:hover {
-   font-size: 140%;
-   width: 170px;
-   height: 28px;
+   /* font-size: 210%; */
+   /* width: 170px; */
+   /* height: 55px; */
+   color: black;
+   background: green;
 }
 .return {
    font-family: monospace;
-   font-size: 100%;
-   color: ghostwhite;
+   font-size: 200%;
+   color: green;
    background: black;
+   border-color: inherit;
    cursor: pointer;
    outline: none;
-   width: 165px;
-   height: 23px;
-   text-align: right;
+   width: 315px;
+   height: 50px;
+   /* width: 200px; */
+   /* height: 23px; */
+   /* text-align: right; */
    /* margin-top: 25px; */
 }
 .return:hover {
-   /* font-size: 110%; */
-   width: 170px;
-   height: 28px;
+   /* font-size: 210%; */
+   /* width: 170px; */
+   /* height: 55px; */
    color: black;
-   background: ghostwhite;
+   background: green;
 }
