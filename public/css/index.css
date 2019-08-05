@@ -24,10 +24,11 @@ h1 {
    overflow: hidden;
    background: rgba(248, 248, 255, 0.85);
    margin: 10px;
-   padding: 15px 10px 10px 10px;
+   padding: 10px 10px 10px 10px;
 }
 .image {
-   width: 90%;
+   width: 100%;
+   /* margin-top: 10%; */
    /* object-fit: scale-down; */
 }
 p {

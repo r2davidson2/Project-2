@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
-      <meta charset="utf-8">
-      <title></title>
+      <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/edit.css">
-      <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
    </head>
    <body>
       <h1>Edit Your <%=`${cars.year} ${cars.make} ${cars.model}` %></h1>
@@ -29,15 +27,12 @@
                <label for="description">Description</label>
                <textarea name="description" rows="8" cols="80"><%=cars.description%></textarea><br>
 
-
                <input class="btn" type="submit" name="" value="Update Car">
-
             </form>
          </div>
       </div>
       <footer>
          <div class="button-container">
-
             <a href="/"><button class="return" type="button" name="button">Return To Car Index</button></a>
          </div>
       </footer>

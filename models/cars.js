@@ -6,7 +6,7 @@ const carSchema = new mongoose.Schema({
    model: String,
    img: String,
    description: String,
-
+   username: String
 }, {timestamps:true});
 
 const Cars = mongoose.model('Cars', carSchema);

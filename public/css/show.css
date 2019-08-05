@@ -7,9 +7,10 @@ body {
 }
 h1 {
    font-size: 450%;
+   margin: 30px auto 20px auto;
 }
 .container {
-   max-width: 70%;
+   max-width: 90%;
    margin: 0 auto 75px auto;
 }
 .image {
@@ -24,7 +25,7 @@ p {
    width: 100%;
 }
 .btn {
-   width: 200px;
+   width: 190px;
    font-family: monospace;
    font-size: 200%;
    /* color: ghostwhite; */
@@ -47,7 +48,10 @@ footer {
    background: black;
    /* background: #4A5B61; */
    width: 100%;
-   padding: 10px;
+   /* padding: 10px; */
+}
+a {
+   /* margin: 0 auto; */
 }
 .return {
    font-family: monospace;
@@ -58,4 +62,5 @@ footer {
    border-color: inherit;
    cursor: pointer;
    outline: none;
+
 }

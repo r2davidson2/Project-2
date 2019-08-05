@@ -9,13 +9,13 @@ const Cars = require('../models/cars.js');
 // ===============
 // New Route
 router.get('/new', (req, res) => {
-   res.render('new.ejs');
+   res.render('cars/new.ejs');
 });
 
 // Index Route
 router.get('/', (req, res) => {
    Cars.find({}, (error, allCars) => {
-      res.render('index.ejs', {
+      res.render('cars/index.ejs', {
          cars: allCars
       });
    });
@@ -32,7 +32,7 @@ router.delete('/:id', (req, res) => {
 // Edit Route
 router.get('/:id/edit', (req, res) => {
    Cars.findById(req.params.id, (error, foundCar) => {
-      res.render('edit.ejs', {
+      res.render('cars/edit.ejs', {
          cars:foundCar
       });
    });
@@ -48,7 +48,7 @@ router.put('/:id', (req, res) => {
 // Show Route
 router.get('/:id', (req, res) => {
    Cars.findById(req.params.id, (error, foundCar) => {
-      res.render('show.ejs', {
+      res.render('cars/show.ejs', {
          cars: foundCar
       });
    });
