@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <% include ../partials/head.ejs %>
-      <link rel="stylesheet" href="/css/edit.css">
+      <link rel="stylesheet" href="/css/cars/edit.css">
    </head>
    <body>
       <h1>Edit Your <%=`${cars.year} ${cars.make} ${cars.model}` %></h1>
@@ -11,7 +11,7 @@
             <img src="<%=cars.img%>" alt="">
          </div>
          <div class="input-container">
-            <form class="" action="/<%=cars.id%>?_method=PUT" method="POST">
+            <form class="" action="/cars/<%=cars.id%>?_method=PUT" method="POST">
                <label for="year">Year</label>
                <input type="Number" name="year" value="<%=cars.year%>"><br>
 
@@ -33,7 +33,7 @@
       </div>
       <footer>
          <div class="button-container">
-            <a href="/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+            <a href="/cars/"><button class="return" type="button" name="button">Return To Car Index</button></a>
          </div>
       </footer>
    </body>

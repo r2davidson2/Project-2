@@ -1,11 +1,19 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
    <head>
-      <meta charset="utf-8">
-         <title>Car Collection</title>
-         <link href="https://fonts.googleapis.com/css?family=Racing+Sans+One&display=swap" rel="stylesheet">
+      <% include ../partials/head.ejs %>
+      <link rel="stylesheet" href="/css/users/new.css">
    </head>
    <body>
       <h1>Create User</h1>
+      <form action="/" method="POST">
+         <label for="username">User Name</label>
+         <input id="username" type="text" class="validate" name="username" required><br>
+
+         <label for="password">Password</label>
+         <input id="password" type="password" class="validate" name="password" required><br>
+
+         <input type="submit" name="" value="Submit">
+      </form>
    </body>
 </html>

@@ -54,9 +54,11 @@ app.use(session({
 }));
 
 const carsController = require('./controllers/cars.js');
-app.use('/', carsController);
+app.use('/cars', carsController);
 const userController = require('./controllers/users.js');
 app.use('/users', userController);
+const sessionController = require('./controllers/sessions.js');
+app.use('/sessions', sessionController);
 
 //___________________
 // Routes
@@ -65,6 +67,20 @@ app.use('/users', userController);
 // app.get('/' , (req, res) => {
 //   res.send('Hello World!');
 // });
+
+app.get('/', (req, res) => {
+   res.render('index.ejs', {
+      currentUser: req.session.currentUser
+   })
+});
+
+app.get('/app', (req, res) => {
+   if (req.session.currentUser) {
+      res.render('app/index.ejs');
+   } else {
+      res.redirect('/sessions/new');
+   }
+});
 
 //___________________
 //Listener

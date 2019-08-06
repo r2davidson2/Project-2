@@ -4,6 +4,7 @@ const bcrypt = require('bcrypt');
 const express = require('express');
 const router = express.Router();
 const Cars = require('../models/cars.js');
+const User = require('../models/users.js');
 
 // ===============
 //     Routes
@@ -26,7 +27,7 @@ router.get('/', (req, res) => {
 //Destroy/Delete Route
 router.delete('/:id', (req, res) => {
    Cars.findByIdAndRemove(req.params.id, (error, foundCar) => {
-      res.redirect('/');
+      res.redirect('/cars');
    });
 });
 
@@ -42,7 +43,7 @@ router.get('/:id/edit', (req, res) => {
 // Update Route
 router.put('/:id', (req, res) => {
    Cars.findByIdAndUpdate(req.params.id, req.body, {new:true}, (error, foundCar) => {
-      res.redirect('/'+req.params.id)
+      res.redirect('/cars/'+req.params.id)
    });
 });
 
@@ -58,7 +59,7 @@ router.get('/:id', (req, res) => {
 // Create Route
 router.post('/', (req, res) => {
    Cars.create(req.body, (error, createdCar) => {
-      res.redirect('/');
+      res.redirect('/cars');
    });
 });
 

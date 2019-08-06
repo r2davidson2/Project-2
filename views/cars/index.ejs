@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
    <head>
       <% include ../partials/head.ejs %>
-      <link rel="stylesheet" href="/css/index.css">
+      <link rel="stylesheet" href="/css/cars/index.css">
    </head>
    <body>
       <h1>All Cars</h1>
@@ -10,7 +10,7 @@
       <div class="container">
          <% for (let i = 0; i < cars.length; i++) { %>
             <div class="car-container">
-               <a href="<%=cars[i].id%>">
+               <a href="/cars/<%=cars[i].id%>">
                   <img class="image" src="<%=cars[i].img%>" alt="<%=`${cars[i].year} ${cars[i].make} ${cars[i].model}` %>">
                </a>
                <p><%=`${cars[i].year} ${cars[i].make} ${cars[i].model}` %></p>
@@ -19,7 +19,7 @@
       </div>
    <footer>
       <div class="footer">
-         <a href="/new"><button class="add" type="button" name="button">Add Your Car</button></a>
+         <a href="/cars/new"><button class="add" type="button" name="button">Add Your Car</button></a>
       </div>
 
    </footer>

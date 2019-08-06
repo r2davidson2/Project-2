@@ -1,0 +1,17 @@
+body {
+   text-align: center;
+   font-family: 'Racing Sans One', cursive;
+   color: ghostwhite;
+   background: black;
+}
+h1 {
+   font-family: 'Racing Sans One', cursive;
+   font-size: 750%;
+   margin: 25px auto 0 auto;
+   color: whitesmoke;
+   text-shadow: 2px 2px green;
+}
+.btn {
+   font-size: 150%;
+   border-radius: 5px;
+}
