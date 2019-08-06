@@ -1,3 +1,33 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   text-align: right;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   width: 100%;
+   background: black;
+   padding: 10px;
+   z-index: 1;
+}
+.logout, .return {
+   font-family: monospace;
+   font-size: 150%;
+   color: green;
+   background: black;
+   border-color: inherit;
+   cursor: pointer;
+   outline: none;
+}
+.return {
+   margin-left: 15px;
+}
+.return:hover {
+   font-size: 160%;
+}
+.logout:hover {
+   font-size: 160%;
+}
 body {
    text-align: center;
    font-family: 'Racing Sans One', cursive;
@@ -7,7 +37,7 @@ body {
 }
 h1 {
    font-size: 450%;
-   margin: 30px auto 20px auto;
+   margin: 50px auto 20px auto;
 }
 .container {
    max-width: 90%;
@@ -39,28 +69,4 @@ p {
    /* background: firebrick; */
    color: firebrick;
    border-color: inherit;
-}
-footer {
-   position: fixed;
-   text-align: center;
-   /* left: 0px; */
-   bottom: 0px;
-   background: black;
-   /* background: #4A5B61; */
-   width: 100%;
-   /* padding: 10px; */
-}
-a {
-   /* margin: 0 auto; */
-}
-.return {
-   font-family: monospace;
-   font-size: 250%;
-   /* color: ghostwhite; */
-   color: green;
-   background: black;
-   border-color: inherit;
-   cursor: pointer;
-   outline: none;
-
 }

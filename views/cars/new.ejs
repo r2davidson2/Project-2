@@ -4,22 +4,28 @@
       <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/cars/new.css">
    </head>
+   <header>
+      <a href="/cars/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+      <form class="" action="/sessions?_method=DELETE" method="POST">
+         <input class="logout" type="submit" value="Logout">
+      </form>
+   </header>
    <body>
       <h1>Add A Car</h1>
       <div class="display-container">
          <div class="input-container">
             <form class="" action="/cars/" method="POST">
                <label for="year">Year</label><br>
-               <input type="Number" name="year" value=""><br>
+               <input class="input" type="Number" name="year" value=""><br>
 
                <label for="make">Make</label><br>
-               <input type="text" name="make" value=""><br>
+               <input class="input" type="text" name="make" value=""><br>
 
                <label for="model">Model</label><br>
-               <input type="text" name="model" value=""><br>
+               <input class="input" type="text" name="model" value=""><br>
 
                <label for="img">Image</label><br>
-               <input type="text" name="img" value=""><br>
+               <input class="input" type="text" name="img" value=""><br>
 
                <label for="description">Description</label><br>
                <textarea name="description"></textarea><br>
@@ -30,7 +36,7 @@
       </div>
       <footer>
          <div class="footer">
-            <a href="/cars/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+
          </div>
       </footer>
 

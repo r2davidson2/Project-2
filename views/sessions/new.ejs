@@ -2,6 +2,10 @@
 <html lang="en" dir="ltr">
    <head>
       <% include ../partials/head.ejs %>
+      <link rel="stylesheet" href="/css/users/new.css">
+   </head>
+   <head>
+      <a href="/"><button class="back" type="button" name="button">Home</button></a>
    </head>
    <body>
       <h1>Log In</h1>
@@ -12,7 +16,7 @@
          <label for="password">Password</label>
          <input id="password" type="password" name="password" required><br>
 
-         <input type="submit" name="" value="Login">
+         <input class="submit" type="submit" name="" value="Login">
       </form>
    </body>
 </html>

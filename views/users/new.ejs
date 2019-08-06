@@ -4,16 +4,19 @@
       <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/users/new.css">
    </head>
+   <head>
+      <a href="/"><button class="back" type="button" name="button">Home</button></a>
+   </head>
    <body>
       <h1>Create User</h1>
       <form action="/" method="POST">
-         <label for="username">User Name</label>
+         <label for="username">User Name</label><br>
          <input id="username" type="text" class="validate" name="username" required><br>
 
-         <label for="password">Password</label>
+         <label for="password">Password</label><br>
          <input id="password" type="password" class="validate" name="password" required><br>
 
-         <input type="submit" name="" value="Submit">
+         <input type="submit" value="Submit" class="submit">
       </form>
    </body>
 </html>

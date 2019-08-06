@@ -1,3 +1,34 @@
+header {
+   display: flex;
+   justify-content: space-between;
+   text-align: right;
+   position: fixed;
+   top: 0px;
+   right: 0px;
+   width: 100%;
+   background: black;
+   padding: 10px;
+   z-index: 1;
+}
+.logout, .add {
+   font-family: monospace;
+   font-size: 150%;
+   color: green;
+   background: black;
+   border-color: inherit;
+   cursor: pointer;
+   outline: none;
+}
+.add {
+   margin-left: 15px;
+}
+.add:hover {
+   font-size: 260%;
+}
+
+.logout:hover {
+   font-size: 160%;
+}
 body {
    text-align: center;
    font-family: 'Racing Sans One', cursive;
@@ -21,45 +52,18 @@ h1 {
 }
 .car-container {
    width: 375px;
-   overflow: hidden;
+   /* overflow: hidden; */
    background: rgba(248, 248, 255, 0.85);
    margin: 10px;
-   padding: 10px 10px 10px 10px;
+   padding: 10px;
+
 }
 .image {
    width: 100%;
-   /* margin-top: 10%; */
-   /* object-fit: scale-down; */
+   height: auto;
+
 }
 p {
    font-size: 150%;
    color: black;
-}
-footer {
-   position: fixed;
-   text-align: center;
-   /* left: 0px; */
-   bottom: 0px;
-   background: black;
-   width: 100%;
-   padding: 10px;
-}
-.footer {
-   /* width: 100%; */
-   /* text-align: center; */
-}
-.add {
-   /* width: 150px; */
-   font-family: monospace;
-   font-size: 250%;
-   /* color: ghostwhite; */
-   color: green;
-   /* background: green; */
-   background: black;
-   border-color: inherit;
-   cursor: pointer;
-   outline: none;
-}
-.add:hover {
-   font-size: 260%;
 }

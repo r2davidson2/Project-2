@@ -4,6 +4,12 @@
       <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/cars/edit.css">
    </head>
+   <header>
+      <a href="/cars/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+      <form class="" action="/sessions?_method=DELETE" method="POST">
+         <input class="logout" type="submit" value="Logout">
+      </form>
+   </header>
    <body>
       <h1>Edit Your <%=`${cars.year} ${cars.make} ${cars.model}` %></h1>
       <div class="display-container">
@@ -13,16 +19,16 @@
          <div class="input-container">
             <form class="" action="/cars/<%=cars.id%>?_method=PUT" method="POST">
                <label for="year">Year</label>
-               <input type="Number" name="year" value="<%=cars.year%>"><br>
+               <input class="input" type="Number" name="year" value="<%=cars.year%>"><br>
 
                <label for="make">Make</label>
-               <input type="text" name="make" value="<%=cars.make%>"><br>
+               <input class="input" type="text" name="make" value="<%=cars.make%>"><br>
 
                <label for="model">Model</label>
-               <input type="text" name="model" value="<%=cars.model%>"><br>
+               <input class="input" type="text" name="model" value="<%=cars.model%>"><br>
 
                <label for="img">Image</label>
-               <input type="text" name="img" value="<%=cars.img%>"><br>
+               <input class="input" type="text" name="img" value="<%=cars.img%>"><br>
 
                <label for="description">Description</label>
                <textarea name="description" rows="8" cols="80"><%=cars.description%></textarea><br>
@@ -33,7 +39,7 @@
       </div>
       <footer>
          <div class="button-container">
-            <a href="/cars/"><button class="return" type="button" name="button">Return To Car Index</button></a>
+
          </div>
       </footer>
    </body>

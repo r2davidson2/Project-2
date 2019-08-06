@@ -3,15 +3,43 @@ body {
    font-family: 'Racing Sans One', cursive;
    color: ghostwhite;
    background: black;
+   /* background-image: url('../img/welcome.jpg'); */
+   background-image: url('https://images.pexels.com/photos/258084/pexels-photo-258084.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260');
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+.container {
+   text-align: left;
+   width: 60%;
+   margin: 0 0 0 auto;
 }
 h1 {
    font-family: 'Racing Sans One', cursive;
-   font-size: 750%;
-   margin: 25px auto 0 auto;
+   font-size: 600%;
+   margin: 25px auto 15px auto;
+   color: ghostwhite;
+   text-shadow: 2px 2px black;
+   /* background: rgba(0, 0, 0, 0.75); */
+}
+h3 {
    color: whitesmoke;
-   text-shadow: 2px 2px green;
+   text-shadow: 2px 2px black;
+   font-size: 350%;
+   margin: 0 auto;
 }
 .btn {
-   font-size: 150%;
-   border-radius: 5px;
+   /* width: 150px; */
+   font-family: monospace;
+   font-size: 200%;
+   color: green;
+   background: black;
+   border-color: inherit;
+   cursor: pointer;
+   outline: none;
+   width: 312px;
+   height: 50px;
+   /* margin-top: 50px; */
+}
+.btn:hover {
+   font-size: 210%;
 }

@@ -4,6 +4,12 @@
       <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/cars/index.css">
    </head>
+   <header>
+      <a href="/cars/new"><button class="add" type="button" name="button">Add Your Car</button></a>
+      <form class="" action="/sessions?_method=DELETE" method="POST">
+         <input class="logout" type="submit" value="Logout">
+      </form>
+   </header>
    <body>
       <h1>All Cars</h1>
 
@@ -19,7 +25,7 @@
       </div>
    <footer>
       <div class="footer">
-         <a href="/cars/new"><button class="add" type="button" name="button">Add Your Car</button></a>
+
       </div>
 
    </footer>

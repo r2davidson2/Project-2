@@ -4,6 +4,12 @@
       <% include ../partials/head.ejs %>
       <link rel="stylesheet" href="/css/cars/show.css">
    </head>
+   <header>
+      <a href="/cars"><button class="return" type="button" name="button">Return to Car Index</button></a>
+      <form class="" action="/sessions?_method=DELETE" method="POST">
+         <input class="logout" type="submit" value="Logout">
+      </form>
+   </header>
    <body>
       <div class="container">
          <h1><%=`${cars.year} ${cars.make} ${cars.model}`%></h1>
@@ -17,7 +23,7 @@
          </div>
       </div>
       <footer>
-         <a href="/cars"><button class="return" type="button" name="button">Return to Car Index</button></a>
+
       </footer>
    </body>
 </html>
