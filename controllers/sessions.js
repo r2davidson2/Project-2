@@ -17,7 +17,7 @@ sessions.post('/', (req, res) => {
         console.log(err)
         res.send('oops something went wrong')
       } else if (!foundUser) {
-         res.send('<a href="/">Sorry, no user found!</a>')
+         res.send('<a href="/users/new">Sorry, no user found!</a>');
       } else {
          // check if passwords match
          if(bcrypt.compareSync(req.body.password, foundUser.password)) {
@@ -26,7 +26,7 @@ sessions.post('/', (req, res) => {
             // redirect back to our home page
             res.redirect('/cars')
          } else {
-            res.send('<a href="/">wrong password</a>')
+            res.send('<a href="/sessions/new">wrong password</a>')
          }
       }
    })
