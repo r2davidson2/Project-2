@@ -1,5 +1,5 @@
 # Project-2
-project 2
+Car Collection
 
 #### Technology
 I used CSS, JavaScript, bcrypt, dotenv, Ejs, Express, Express-session, Mongoose, and MongoDB to build this application.
@@ -15,3 +15,6 @@ I want to add functionality so the user who adds cars is the only user able to m
 
 ##### Photo Credit
 Photos from pexels.com.
+
+##### App Link
+https://pacific-journey-62540.herokuapp.com
