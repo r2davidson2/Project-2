@@ -14,7 +14,7 @@ users.post('/', (req, res) => {
          console.log(error);
       }
       console.log(createdUser);
-      res.redirect('/');
+      res.redirect('/cars');
    });
 });
 
