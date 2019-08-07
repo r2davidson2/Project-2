@@ -11,16 +11,24 @@ const User = require('../models/users.js');
 // ===============
 // New Route
 router.get('/new', (req, res) => {
-   res.render('cars/new.ejs');
+   if (req.session.currentUser) {
+      res.render('cars/new.ejs');
+   } else {
+      res.redirect('/sessions/new');
+   }
 });
 
 // Index Route
 router.get('/', (req, res) => {
-   Cars.find({}, (error, allCars) => {
-      res.render('cars/index.ejs', {
-         cars: allCars
+   if (req.session.currentUser) {
+      Cars.find({}, (error, allCars) => {
+         res.render('cars/index.ejs', {
+            cars: allCars
+         });
       });
-   });
+   } else {
+      res.redirect('/sessions/new');
+   }
    // res.render('index.ejs')
 });
 
