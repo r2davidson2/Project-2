@@ -5,6 +5,9 @@
     <link rel="stylesheet" href="/css/users/welcome.css"></link>
   </head>
   <body>
+     <div class="body">
+
+
    <% if (currentUser) { %>
       <div class="container">
          <h1>Welcome <%=currentUser.username%>!</h1><br>
@@ -14,11 +17,15 @@
       </div>
    <% } else {%>
       <div class="container">
-         <h1>Car Collection</h1>
+         <div class="welcome">
+            <h1>Car</h1>
+            <h1 class="lower">Collection</h1>
+         </div>
          <a href="/users/new"><button class="btn" type="button" name="button">Sign Up</button></a>
          <h3>or</h3>
          <a href="/sessions/new"><button class="btn" type="button" name="button">Login</button></a>
       </div>
    <% } %>
+    </div>
   </body>
 </html>
